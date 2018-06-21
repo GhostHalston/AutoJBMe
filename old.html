@@ -1,40 +1,26 @@
-
-<!--
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-- -->
+<!DOCTYPE html>
 <html>
- <body onload="javascript:loadRes()">
- <meta charset="UTF-8">
+   <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <head>
      <title>AutoJBMe</title>
      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=VT323" />
      <style>
-	   samp {
-  background: #000;
-  border: 3px groove #ccc;
-  color: #ccc;
-  display: block;
-  padding: 5px;
-  width: 300px;
-}
        .stuff {
          font-family: "VT323";
-         font-size: 50px;
+         font-size: 38px;
          line-height: 13.8px;
          text-align: center;
        }
        img {
          height: auto; 
          width: auto; 
-         max-width: 600px; 
-         max-height: 600px;
+         max-width: 500px; 
+         max-height: 500px;
          display: block;
     	   margin-left: auto;
          margin-right: auto;
-     	   width: 80%;
+     	   width: 50%;
        }
        samp {
         text-align: center;
@@ -44,35 +30,28 @@ Hash: SHA256
         color: #ccc;
         display: block;
         padding: 5px;
-        width: 250px;
+        width: 200px;
       }
-	  body {
-	    text-align: center;
-		margin: auto;
-		//width: 200px;
-		font-size: 30px;
-		}
 
      </style>
    </head>
- <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
-</head>
-<body onload="javascript:sleepForASec()" style="background-image:url(http://cypressintegration.com/wp-content/uploads/Bright-Blue1.jpg)">
-<div class="stuff">
+   <body onload="javascript:loadRes()" style="background-image:url(http://cypressintegration.com/wp-content/uploads/Bright-Blue1.jpg)">
+ <div class="stuff">
     </div>
    <h1>AutoJBMe</h1>
-   <div id="bigButton">
-   <p><samp>Initilizing...</samp></p>
-   </div>
-   <img src="https://cdn.dribbble.com/users/807926/screenshots/3629667/loadingtwo.gif"></body>
+   <h5>
+   By Tom O'Donnell
+   </h5>
+   <hr>
+   <h6>
+   Jailbreak in Progress..
+   </h6>
  </div>
-
-<script>
-function sleepForASec() {
-  sleep(5)
-  loadRes();
- }
- 
+<div id="bigButton" style="font-size:42px;font-family: Arial Black,Arial Bold,Gadget,sans-serif">
+      <a href="javascript:loadRes()">jailbreak me!</a>
+    </div>
+   
+   <script>
 function load_binary_resource(url) {
   var req = new XMLHttpRequest();
   req.open('GET', url, false);
@@ -366,7 +345,6 @@ function go_(){
 }
 
 function loadRes(){
-  sleep(2);
   console.log("Downloading resources");
   document.getElementById('bigButton').innerHTML = "Downloading Resources"
   setTimeout(function () {
@@ -382,23 +360,6 @@ function loadRes(){
         }, 100);
       }, 100);
 }
-</script>
-</html>
-<!--
------BEGIN PGP SIGNATURE-----
-
-iQIzBAEBCAAdFiEEhP4n5saWZp3fpLDl/96aHmqiD60FAlooZiIACgkQ/96aHmqi
-D60Eaw//Xts7TiZvTw8kexR8fCDot+IZU7xLYnrfB9qPVUXHo0ePHUPaYcPCLvBI
-lxl0vxeUIaauLqbNRxi//x8DzsCRi9/rsvHAjJPQDrm5+28WiMm4zbL0D9zVQWCu
-0P+NR3VYBFq8L2yA5/5+opkF37gLvNnP9er8hUux2U6sdfbbzFU7sStNeceBq3di
-l5/WKNd6iH5EbGjCrxA3DbJxNU/sFbrSASUkwdyU+Epsf/nwoN2WOhhqHRJDatyI
-fEWjnuDBjtcOFOYFmWc34wrtznmjiOob2Nrd24XOlLzXj4PJ82J/3l5Tx/kh9OM9
-3Im/NZZpVRjkiyyNtOqfbWClvpitYpKqBnA/utfR30DNWDeLntX8WIoiLdkJ7BF3
-d1eBivSQfWrNYiv1M5IcXjH/bP5nPJRXDYzR8LFfb9KTu37BJIjtNwt6KUJ8z8Gh
-Clp/gbMCJ7X7cuYISH4MRQTL/N3sAGUyNu8L4MXt7Scyudsd0klvEVA1rHeifzQ8
-/Zxyboq3uI4DZZ0LTl+4zE1iUHj3mQJBWWVqUcTjEHk9fRDqaq3i9NWnBKRHj20h
-JqwRJTTjp4zKZsJ4i/80aAAm25DEhCj6Ik50BUFwQRGiuIHS0jV+WoPsi+Tz3m/5
-//h0h1akeIKkYFRVZ9AS1YtIQIkvgqmhHvBOclV+hwk59GWwwmA=
-=RqDq
------END PGP SIGNATURE-----
--->
+   </script>
+<img src="https://cdn.dribbble.com/users/807926/screenshots/3629667/loadingtwo.gif"></body>
+   </html>
