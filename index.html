@@ -57,22 +57,16 @@ Hash: SHA256
    </head>
  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
 </head>
-<body onload="javascript:sleepForASec()" style="background-image:url(http://cypressintegration.com/wp-content/uploads/Bright-Blue1.jpg)">
+<body onload="javascript:loadRes()" style="background-image:url(http://cypressintegration.com/wp-content/uploads/Bright-Blue1.jpg)">
 <div class="stuff">
     </div>
    <h1>AutoJBMe</h1>
    <div id="bigButton">
    <p><samp>Initilizing...</samp></p>
    </div>
-   <img src="https://cdn.dribbble.com/users/807926/screenshots/3629667/loadingtwo.gif"></body>
  </div>
-
-<script>
-function sleepForASec() {
-  sleep(5)
-  loadRes();
- }
  
+<script>
 function load_binary_resource(url) {
   var req = new XMLHttpRequest();
   req.open('GET', url, false);
